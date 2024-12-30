@@ -1,0 +1,29 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "singleQuote": false
+            }
+        },
+        {
+            "files": "*.css",
+            "options": {
+                "tabWidth": 4,
+                "singleQuote": false
+            }
+        },
+        {
+            "files": "*.js",
+            "options": {
+                "quoteProps": "consistent",
+                "trailingComma": "all",
+                "bracketSpacing": false,
+                "arrowParens": "always"
+            }
+        }
+    ]
+}
