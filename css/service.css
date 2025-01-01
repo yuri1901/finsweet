@@ -1,0 +1,98 @@
+/* header */
+.service-intro {
+    background: var(--bgc-orange);
+    padding: 100px 0;
+}
+.service-intro__inner {
+    display: flex;
+    align-items: center;
+    gap: 0 240px;
+    div.base-content {
+        display: flex;
+        flex-direction: column;
+        p {
+            max-width: 640px;
+        }
+        & > span {
+            margin-top: 24px;
+            max-width: 610px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-dark-blue-op06);
+        }
+        a.base-button {
+            margin-top: 40px;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--textColor-dark-blue);
+        }
+    }
+}
+.click-link.is-arrow {
+    position: relative;
+    padding-right: calc(16px + 21px);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+        width: 21px;
+        height: 16px;
+        background: url(../images/icons/arrow-black.svg) no-repeat;
+    }
+}
+/* process */
+.process-service {
+    background-color: var(--bgc-dark-white);
+}
+
+/* info */
+.info {
+    &:nth-child(2) {
+        background-color: var(--bgc-light-green);
+        .info-inner {
+            flex-direction: row-reverse;
+        }
+    }
+    &:nth-child(4) {
+        background-color: var(--bgc-veryLight-blue);
+        .info-inner {
+            flex-direction: row-reverse;
+        }
+    }
+}
+.info-inner {
+    height: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div.base-content {
+        p {
+            max-width: 650px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+        span {
+            max-width: 625px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-dark-blue-op06);
+        }
+    }
+    div:not(div.base-content) {
+        align-self: flex-start;
+        width: 520px;
+        height: 540px;
+    }
+}
