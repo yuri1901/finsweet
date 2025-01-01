@@ -146,6 +146,9 @@ input::-webkit-inner-spin-button {
 span {
     display: inline-block;
 }
+small {
+    display: inline-block;
+}
 a {
     display: inline-block;
     text-decoration: none;

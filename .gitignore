@@ -1,0 +1,48 @@
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Локальні файли IDE
+.idea/
+.vscode/
+*.iml
+
+# Лог-файли та тимчасові файли
+*.log
+*.tmp
+*.pid
+*.swp
+
+# Файли операційної системи
+*.bak
+*.old
+
+# Node.js проєкт
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build-файли
+/dist/
+build/
+*.class
+*.o
+*.obj
+*.exe
+
+# Картинки або великі медіафайли, що генеруються динамічно
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+
+# Конфігураційні файли інструментів
+.prettierrc
+.prettierignore
+.eslintrc
+.eslintignore
+
+# Git файли
+!.gitignore
