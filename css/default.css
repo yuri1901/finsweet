@@ -22,6 +22,7 @@
 
     --linkColor-purple: rgb(68, 76, 252);
     --linkBgc-purple: rgb(68, 76, 252);
+    --bgc-purple: rgb(68, 76, 252);
     --linkColor-purple-op90: rgba(68, 76, 252, 0.9);
     --sectionBgc-purple: rgb(102, 109, 255);
 
@@ -118,7 +119,7 @@ body {
         color: var(--titleColor-dark-op90);
     }
     & > p {
-        margin-top: 16px;
+        margin-top: 20px;
         font-weight: 600;
         font-size: 48px;
         line-height: 58px;
@@ -422,6 +423,93 @@ a.nav-link.is-active {
     }
 }
 
+/* expertise */
+.expertise {
+    min-height: 100vh;
+    background-color: var(--bgc-light-blue);
+    display: flex;
+}
+.expertise-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .base-content {
+        max-width: 620px;
+        & span {
+            margin-top: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-gray);
+        }
+    }
+}
+.expertise-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -100%);
+        width: 16px;
+        height: 16px;
+        background-color: var(--sectionBgc-purple);
+    }
+}
+.expertise-item {
+    width: 510px;
+    height: 140px;
+    background-color: var(--bgc-white);
+    padding-left: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .expertise-information {
+        position: relative;
+        padding-left: calc(16px + 47px);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 47px;
+            height: 47px;
+        }
+        p {
+            max-width: 300px;
+        }
+    }
+    &:first-child {
+        .expertise-information {
+            &::before {
+                background: url(../images/icons/expertise-duration.svg)
+                    no-repeat;
+            }
+        }
+    }
+    &:nth-child(2) {
+        .expertise-information {
+            &::before {
+                background: url(../images/icons/expertise-quality.svg) no-repeat;
+            }
+        }
+    }
+    &:last-child {
+        background-image: url(../images/icons/expertise-layer.svg);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .expertise-information {
+            &::before {
+                background: url(../images/icons/expertise-support.svg) no-repeat;
+            }
+        }
+    }
+}
 /* footer */
 
 .send {
@@ -471,12 +559,12 @@ a.nav-link.is-active {
         }
     }
 }
-
-.footer-send,
+.footer-send {
+    padding-top: 100px;
+}
 .footer-content {
     padding-top: 100px;
 }
-
 .content-inner {
     display: flex;
     justify-content: space-between;
@@ -534,7 +622,6 @@ a.nav-link.is-active {
         }
     }
 }
-
 .content-nav {
     padding-top: 80px;
     padding-right: 117px;
@@ -584,7 +671,6 @@ a.nav-link.is-active {
         animation: showBorder 0.3s cubic-bezier(0.35, 0.34, 0.72, 0.71) forwards;
     }
 }
-
 @keyframes showBorder {
     0% {
         width: 0;
@@ -601,7 +687,6 @@ a.nav-link.is-active {
         width: 0%;
     }
 }
-
 .content-item:last-child {
     display: flex;
     flex-direction: column;
@@ -623,7 +708,7 @@ a.nav-link.is-active {
         transform: translate(0%, -50%);
         width: 25px;
         height: 8px;
-        background: url(../images/icons/arrow-black.svg) no-repeat;
+        background: url(../images/icons/arrow-black-2.svg) no-repeat;
     }
     /* СТРІЛКА???? */
     &::after {
