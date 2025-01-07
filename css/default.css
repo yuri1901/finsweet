@@ -209,6 +209,29 @@ body {
         }
     }
 }
+address.base-author {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    div:first-of-type {
+        width: 32px;
+        height: 32px;
+    }
+    div:last-of-type {
+        display: flex;
+        flex-direction: column;
+        a {
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-dark-blue-op09);
+            font-size: 16px;
+        }
+        time {
+            line-height: 20px;
+            color: var(--textColor-dark-blue-op06);
+        }
+    }
+}
 a.nav-link.is-active {
     color: var(--linkColor-white);
     position: relative;
