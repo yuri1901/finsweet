@@ -122,7 +122,6 @@ button {
 
 input {
     border: none;
-    /* font: inherit; */
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
@@ -134,15 +133,24 @@ input {
 }
 input[type="radio"],
 input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
+    appearance: none;
+    /* display: none; */
+    /* opacity: 0; */
+    /* visibility: hidden; */
 }
-
 input::-webkit-inner-spin-button {
     appearance: none;
 }
-
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    &::placeholder {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+}
 span {
     display: inline-block;
 }

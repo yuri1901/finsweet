@@ -1,0 +1,168 @@
+.main {
+    & > div.base-content {
+        min-height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        p {
+            margin: 20px auto 0 auto;
+            max-width: 630px;
+        }
+        span {
+            margin: 20px auto 0 auto;
+            max-width: 625px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: var(--textColor-dark-blue-op09);
+        }
+        & > p:last-of-type {
+            display: inline-block;
+            margin: 60px auto 0 auto;
+            color: var(--textColor-dark-blue);
+            background-image: url(../images/carrer-layer-text.jpg);
+            background-clip: text;
+            background-position: bottom center;
+
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            text-transform: capitalize;
+        }
+        & > div:last-child {
+            margin-top: 80px;
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                color: var(--textColor-dark-blue);
+            }
+            a {
+                margin-top: 16px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+/* vacancy */
+.vacancy {
+    margin-top: 100px;
+    background-color: #ecf8f9;
+    min-height: 100vh;
+}
+.vacancy-inner {
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 240px);
+    gap: 30px;
+
+    article {
+        padding: 40px 50px 30px;
+        background-color: var(--bgc-white);
+        h2 {
+            font-weight: 600;
+            line-height: 28px;
+            color: var(--titleColor-dark-blue);
+        }
+        li {
+            margin-top: 10px;
+            display: flex;
+            gap: 0 10px;
+            p {
+                font-weight: 400;
+                line-height: 24px;
+                color: var(--textColor-dark-blue-op06);
+            }
+        }
+        a {
+            margin-top: 50px;
+        }
+    }
+}
+/* culture */
+.culture {
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: #fafafc;
+}
+.culture-inner {
+    div.base-content {
+        p {
+            max-width: 580px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+        span {
+            margin-top: 20px;
+            max-width: 620px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-dark-blue);
+            opacity: 0.6;
+        }
+    }
+}
+.culture-blocks {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 190px);
+    gap: 15px;
+
+    article:first-child > div::before {
+        background-image: url(../images/icons/culture-covid.svg);
+    }
+    article:nth-child(2) > div::before {
+        background-image: url(../images/icons/culture-duration.svg);
+    }
+    article:nth-child(3) > div::before {
+        background-image: url(../images/icons/culture-house.svg);
+    }
+    article:nth-child(4) > div::before {
+        background-image: url(../images/icons/culture-price.svg);
+    }
+    article:nth-child(5) > div::before {
+        background-image: url(../images/icons/culture-surprise.svg);
+    }
+    article:last-child > div::before {
+        background-image: url(../images/icons/culture-gym.svg);
+    }
+    article {
+        padding: 32px 0 0 32px;
+        background-color: var(--bgc-white);
+        h2 {
+            font-weight: 600;
+            line-height: 28px;
+            color: var(--titleColor-dark-blue);
+        }
+        p {
+            margin-top: 10px;
+            max-width: 326px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--textColor-dark-blue-op06);
+            opacity: 0.6;
+        }
+        & > div {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                background-color: #ffd3af;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 15px 20px;
+            }
+            padding-top: 50px;
+        }
+    }
+}

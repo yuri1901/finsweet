@@ -43,7 +43,9 @@
 
     --bgc-light-blue: rgb(236, 248, 249);
 }
-
+html {
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: "Poppins";
     font-style: normal;
@@ -220,6 +222,23 @@ a.nav-link.is-active {
         height: 3px;
         background-color: var(--navColor-orange);
     }
+}
+div.tab-buttons > button.is-active {
+    color: var(--linkColor-purple);
+    position: relative;
+    height: 100%;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        transform: translate(0%, 100%);
+        left: 0;
+        right: 0;
+        border-bottom: 4px solid var(--linkColor-purple);
+    }
+}
+div.tab-info > article.is-show {
+    display: block;
 }
 .base-item {
     & > h2 {
