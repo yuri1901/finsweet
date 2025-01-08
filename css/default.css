@@ -552,6 +552,43 @@ div.tab-info > article.is-show {
         }
     }
 }
+
+/* text */
+.text {
+    display: flex;
+    justify-content: center;
+}
+.text-inner {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    h2 {
+        max-width: 840px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: var(--textColor-dark-blue);
+    }
+    h3 {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--textColor-dark-blue);
+    }
+    p {
+        max-width: 840px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--textColor-dark-blue);
+    }
+    li {
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--textColor-dark-blue);
+    }
+}
 /* footer */
 
 .send {

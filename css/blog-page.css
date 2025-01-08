@@ -1,0 +1,90 @@
+/* news */
+.news {
+    margin-top: 100px;
+}
+.news-inner {
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+        align-items: flex-start;
+        padding-top: 50px;
+        background: url(../images/icons/trending-layer.svg) no-repeat;
+        background-position: top right;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: var(--bgc-orange);
+        }
+        h2 {
+            max-width: 740px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            color: var(----titleColor-dark-blue);
+        }
+        span {
+            max-width: 710px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--textColor-dark-blue-op09);
+        }
+        address {
+            margin-top: 10px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 42.3%;
+                transform: translate(-43%, -50%);
+                height: 16px;
+                width: 2px;
+                background-color: rgba(128, 128, 128, 0.2);
+            }
+            display: inline-flex;
+            align-items: center;
+            gap: 0 20px;
+
+            a {
+                font-weight: 400;
+                line-height: 24px;
+                color: var(--textColor-dark-blue-op09);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0 10px;
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            time {
+                font-weight: 400;
+                line-height: 24px;
+                color: var(--textColor-dark-blue-op06);
+            }
+        }
+        div {
+            margin-top: 80px;
+            height: 370px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0%;
+                right: 0;
+                transform: translate(0%, 100%);
+                width: 346px;
+                height: 17px;
+                background: url(../images/icons/blog-page-layer.svg) no-repeat;
+            }
+        }
+    }
+}
