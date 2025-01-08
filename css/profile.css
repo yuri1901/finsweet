@@ -1,0 +1,47 @@
+/* profile */
+.profile-inner {
+    & > article {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 320px;
+            height: 320px;
+        }
+        h3 {
+            margin-top: 50px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            color: var(--titleColor-dark-blue);
+        }
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--textColor-dark-blue-op06);
+            text-transform: uppercase;
+        }
+        span {
+            margin-top: 30px;
+            max-width: 505px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: var(--textColor-dark-blue-op09);
+        }
+        ul {
+            margin-top: 30px;
+            display: flex;
+            gap: 0 30px;
+            a {
+                transition: transform 0.5s ease;
+            }
+            a:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
