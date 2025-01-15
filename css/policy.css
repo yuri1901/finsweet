@@ -1,0 +1,39 @@
+section.container {
+    margin-top: 100px;
+    div {
+        background: url(../images/icons/policy-layer.svg) no-repeat;
+        background-position: top right;
+        padding-top: 50px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: var(--bgc-light-orange);
+        }
+    }
+    p {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: #232536;
+        text-transform: capitalize;
+    }
+    time {
+        margin-top: 10px;
+        line-height: 24px;
+        color: var(--textColor-dark-blue-op06);
+        opacity: 0.6;
+    }
+}
+section.container-fluid {
+    margin-top: 100px;
+    & > .text-inner {
+        align-items: center;
+        background: #ecf8f9;
+    }
+}

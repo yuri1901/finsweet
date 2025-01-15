@@ -25,6 +25,7 @@
     --bgc-purple: rgb(68, 76, 252);
     --linkColor-purple-op90: rgba(68, 76, 252, 0.9);
     --sectionBgc-purple: rgb(102, 109, 255);
+    --bgc-lightPurple: #666dff;
 
     --navColor-orange: rgb(255, 161, 85);
     --bgc-light-orange: #ffe6d2;
@@ -137,7 +138,7 @@ body {
 .base-button {
     width: 230px;
     height: 60px;
-
+    text-transform: capitalize;
     display: flex;
     justify-content: center;
     align-items: center;

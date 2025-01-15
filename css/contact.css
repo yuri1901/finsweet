@@ -1,0 +1,181 @@
+/* communication */
+.communication {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+.communication-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & > div:first-of-type {
+        div.base-content {
+            padding-top: 50px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                background-color: var(--bgc-light-orange);
+            }
+            p {
+                max-width: 670px;
+            }
+            span {
+                margin-top: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                color: var(--textColor-dark-blue-op06);
+            }
+        }
+    }
+    & > div:last-of-type {
+        margin-top: 22px;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+        }
+        &::before {
+            background: url(../images/icons/contact-short-layer.svg) no-repeat;
+            width: 130px;
+            top: 0;
+            right: 0;
+            height: 22px;
+            transform: translate(0%, -100%);
+        }
+        &::after {
+            background: url(../images/icons/contact-long-layer.svg) no-repeat;
+            bottom: 0;
+            left: 0;
+            width: 22px;
+            height: 296px;
+            transform: translate(-100%, 0%);
+        }
+        width: 510px;
+        height: 650px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        background-color: var(--bgc-lightPurple);
+
+        article {
+            p {
+                padding-bottom: 13px;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--textColor-white-op60);
+                text-transform: capitalize;
+                &:first-of-type {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 270px;
+                        height: 1px;
+                        background-color: rgba(0, 0, 0, 0.08);
+                    }
+                }
+            }
+            span {
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #ffffff;
+                opacity: 0.6;
+            }
+        }
+        address,
+        time {
+            display: inline-block;
+            padding-top: 12px;
+            max-width: 265px;
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--textColor-white);
+        }
+        time {
+            max-width: 175px;
+        }
+        address:last-of-type {
+            display: flex;
+            flex-direction: column;
+        }
+        a[href="#mailto:hello@ether.com"] {
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+            opacity: 0.6;
+        }
+        ul {
+            margin-top: 20px;
+            display: flex;
+            gap: 0 30px;
+            & a {
+                transition: transform 0.5s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+.communication-form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    label {
+        display: inline-block;
+        height: inherit;
+        position: relative;
+        & > span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--textColor-dark-blue-op06);
+            text-transform: capitalize;
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            left: 0;
+            transition: all 0.2s ease;
+        }
+    }
+    input {
+        width: 400px;
+        height: 40px;
+        padding-right: 20px;
+        font-family: "Poppins";
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--textColor-dark);
+        border-bottom: 1px solid rgba(35, 37, 54, 0.1);
+        outline: NONE;
+
+        &:focus + span {
+            top: -50%;
+            left: 0%;
+            transform: translate(0%, 0%);
+        }
+        &:not(:placeholder-shown) + span {
+            top: -50%;
+            left: 0%;
+            transform: translate(0%, 0%);
+        }
+    }
+}
+
+.map {
+    margin-top: 100px;
+}
