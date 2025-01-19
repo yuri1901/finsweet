@@ -165,11 +165,26 @@
             color: var(--textColor-dark-blue-op09);
         }
     }
-
+    input[type="checkbox"] {
+        background-color: var(--bgc-purple);
+        width: 36px;
+        height: 36px;
+        position: relative;
+        &:checked::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 14px;
+            background: url(../images/icons/apply-checked.svg) no-repeat;
+        }
+    }
     label[for="form-check"] {
         display: inline-block;
         max-width: 900px;
-        padding-left: 60px;
+        padding-left: 24px;
 
         font-weight: 400;
         line-height: 24px;
@@ -177,17 +192,7 @@
 
         cursor: pointer;
         position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            width: 36px;
-            height: 36px;
-            top: 0%;
-            left: 0%;
-            width: 36px;
-            height: 36px;
-            background-color: var(--bgc-purple);
-        }
+        /* 
 
         input[id="form-check"]:checked + &::after {
             content: "";
@@ -198,7 +203,7 @@
             width: 18px;
             height: 14px;
             background: url(../images/icons/apply-checked.svg) no-repeat;
-        }
+        } */
     }
 
     button.base-button {

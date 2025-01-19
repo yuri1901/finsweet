@@ -18,12 +18,18 @@
             color: var(--textColor-dark-blue-op09);
         }
         & > p:last-of-type {
-            display: inline-block;
+            max-width: 1100px;
+            font-size: 272px;
+            font-weight: 900;
+            min-height: 211px;
+            display: flex;
+            align-items: center;
+
             margin: 60px auto 0 auto;
             color: var(--textColor-dark-blue);
             background-image: url(../images/carrer-layer-text.jpg);
             background-clip: text;
-            background-position: bottom center;
+            background-position: center left;
 
             -webkit-text-fill-color: transparent;
             text-fill-color: transparent;
